@@ -16,7 +16,7 @@
     "keywords": [],
     "sideEffects": false,
     "bin": {
-        "gitui": "./dist/index.js"
+        "mpdtui": "./dist/index.js"
     },
     "files": [
         "dist/index.js"
