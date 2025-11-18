@@ -1,0 +1,35 @@
+{
+    "name": "@monstermann/mpdtui",
+    "type": "module",
+    "version": "0.0.0",
+    "description": "Simple TUI for mpd.",
+    "author": "Michael Ostermann <michaelostermann@me.com>",
+    "license": "MIT",
+    "homepage": "https://MichaelOstermann.github.io/mpdtui",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MichaelOstermann/mpdtui.git"
+    },
+    "bugs": {
+        "url": "https://github.com/MichaelOstermann/mpdtui/issues"
+    },
+    "keywords": [],
+    "sideEffects": false,
+    "bin": {
+        "gitui": "./dist/index.js"
+    },
+    "files": [
+        "dist/index.js"
+    ],
+    "scripts": {
+        "bundle": "tsdown",
+        "release": "bun publish --access public"
+    },
+    "dependencies": {
+        "@monstermann/dfdl": "^0.1.0",
+        "@monstermann/signals": "^0.0.0",
+        "@monstermann/signals-tui": "^0.0.0",
+        "fuzzysort": "^3.1.0",
+        "mpd-api": "^1.1.3"
+    }
+}
