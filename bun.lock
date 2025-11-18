@@ -18,10 +18,13 @@
     "packages/mpdtui": {
       "name": "@monstermann/mpdtui",
       "version": "0.0.1",
+      "bin": {
+        "mpdtui": "./dist/index.js",
+      },
       "dependencies": {
         "@monstermann/dfdl": "^0.1.0",
         "@monstermann/signals": "^0.0.0",
-        "@monstermann/signals-tui": "^0.0.0",
+        "@monstermann/signals-tui": "^0.1.0",
         "fuzzysort": "^3.1.0",
         "mpd-api": "^1.1.3",
       },
@@ -214,7 +217,7 @@
 
     "@monstermann/signals": ["@monstermann/signals@0.0.0", "", { "dependencies": { "@monstermann/dll": "^0.0.0", "@monstermann/dsp": "^0.2.1", "@monstermann/meta": "^0.1.0" } }, "sha512-gjmuKZ5alJ2dqXlF++T1VBwxn1iGFYphTW66W6nyOBZkBRVu1OiJj43Y8VRWQ9kJVTPfKGHJxsFmhMXBTL49xA=="],
 
-    "@monstermann/signals-tui": ["@monstermann/signals-tui@0.0.0", "", { "dependencies": { "@monstermann/signals": "^0.0.0", "@types/node": "^24.10.1", "get-east-asian-width": "^1.4.0", "p-defer": "^4.0.1", "signal-exit": "^4.1.0", "strip-ansi": "^7.1.2" } }, "sha512-AuLxghXjKu7+9JXJjz0SeBuHmY6FM3dTYrlG6/9DYnlMTxownru88s1p0tWI/n2wfcqVVBzheaK3sZz/c3+Mzg=="],
+    "@monstermann/signals-tui": ["@monstermann/signals-tui@0.1.0", "", { "dependencies": { "@monstermann/signals": "^0.0.0", "@types/node": "^24.10.1", "get-east-asian-width": "^1.4.0", "p-defer": "^4.0.1", "signal-exit": "^4.1.0", "strip-ansi": "^7.1.2" } }, "sha512-9qwuxL4p0eeO+MyNKkIVIw6GEEIELzTJ36+lUsDYNvvwcfIfIoSvqi+wnYOkUlvWbC+GZzOLvZ27I6B7Lj6FPg=="],
 
     "@monstermann/vitepress-theme": ["@monstermann/vitepress-theme@0.2.0", "", {}, "sha512-/2iV2HTsgGFZffl15XvjaQF+N/2rRiLvW/xc3NtGAKU6g+Rnb9v7Era9OecD7xeu3CwD97vEc1eZrqR/auCB+A=="],
 
