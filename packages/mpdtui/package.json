@@ -19,7 +19,7 @@
         "mpdtui": "./dist/index.js"
     },
     "files": [
-        "dist/index.js"
+        "dist"
     ],
     "scripts": {
         "bundle": "tsdown",
