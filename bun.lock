@@ -26,6 +26,8 @@
         "@monstermann/signals": "^0.0.0",
         "@monstermann/signals-tui": "^0.2.0",
         "fuzzysort": "^3.1.0",
+      },
+      "devDependencies": {
         "mpd-api": "^1.1.3",
       },
     },
