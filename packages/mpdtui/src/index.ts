@@ -67,9 +67,18 @@ Term.onShortcuts({
             const line = Tracks.list.selectedLine()
             if (line) play(line.data.file, Tracks.$viewing().map(t => t.file))
         }
+        else if (Cmdline.input.isFocused()) {
+            Input.blur(Cmdline.input)
+        }
     },
     "<esc>": () => {
-        Input.reset(Cmdline.input)
+        if (Cmdline.input.isFocused()) {
+            Input.reset(Cmdline.input)
+            Input.blur(Cmdline.input)
+        }
+        else {
+            Input.reset(Cmdline.input)
+        }
     },
     "<left>": () => {
         List.focus(Sidebar.list)
