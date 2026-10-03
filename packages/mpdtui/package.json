@@ -1,7 +1,7 @@
 {
     "name": "@monstermann/mpdtui",
     "type": "module",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "description": "Simple TUI for mpd.",
     "author": "Michael Ostermann <michaelostermann@me.com>",
     "license": "MIT",
