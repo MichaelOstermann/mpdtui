@@ -1,13 +1,14 @@
 {
-    "extends": "@sindresorhus/tsconfig",
+    "extends": "@monstermann/tsconfig",
     "compilerOptions": {
+        "jsx": "react-jsx",
+        "jsxImportSource": "@opentui/react",
         "lib": ["DOM", "DOM.Iterable", "ES2023"],
-        "module": "ESNext",
-        "moduleResolution": "bundler",
-        "noEmit": true
+        "types": ["bun"]
     },
     "exclude": [
         "**/dist/**",
-        "**/node_modules/**"
+        "**/node_modules/**",
+        "playground/**"
     ]
 }

@@ -1,0 +1,40 @@
+import { RGBA } from "@opentui/core"
+
+const Ansi = {
+    black: 0,
+    blue: 4,
+    brightBlack: 8,
+    brightBlue: 12,
+    brightCyan: 14,
+    brightGreen: 10,
+    brightMagenta: 13,
+    brightRed: 9,
+    brightWhite: 15,
+    brightYellow: 11,
+    cyan: 6,
+    green: 2,
+    magenta: 5,
+    red: 1,
+    white: 7,
+    yellow: 3,
+} as const
+
+export const theme = {
+    black: RGBA.fromIndex(Ansi.black),
+    blue: RGBA.fromIndex(Ansi.blue),
+    brightBlack: RGBA.fromIndex(Ansi.brightBlack),
+    brightBlue: RGBA.fromIndex(Ansi.brightBlue),
+    brightCyan: RGBA.fromIndex(Ansi.brightCyan),
+    brightGreen: RGBA.fromIndex(Ansi.brightGreen),
+    brightMagenta: RGBA.fromIndex(Ansi.brightMagenta),
+    brightRed: RGBA.fromIndex(Ansi.brightRed),
+    brightWhite: RGBA.fromIndex(Ansi.brightWhite),
+    brightYellow: RGBA.fromIndex(Ansi.brightYellow),
+    cyan: RGBA.fromIndex(Ansi.cyan),
+    foreground: RGBA.defaultForeground(),
+    green: RGBA.fromIndex(Ansi.green),
+    magenta: RGBA.fromIndex(Ansi.magenta),
+    red: RGBA.fromIndex(Ansi.red),
+    white: RGBA.fromIndex(Ansi.white),
+    yellow: RGBA.fromIndex(Ansi.yellow),
+}

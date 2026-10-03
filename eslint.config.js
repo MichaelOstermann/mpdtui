@@ -1,3 +1,3 @@
 import eslint from "@monstermann/eslint-config"
 
-export default eslint()
+export default eslint({ ignores: ["playground/**"] })

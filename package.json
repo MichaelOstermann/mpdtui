@@ -3,22 +3,13 @@
     "private": true,
     "workspaces": ["packages/*"],
     "scripts": {
-        "checks": "bun run eslint && bun run tsc && bun run vitest run --passWithNoTests",
+        "checks": "bun run eslint && bun run tsc && bun test ./packages",
         "bundles": "bun run -F '*' bundle",
-        "release": "bun run scripts/release",
-        "docs": "vitepress dev docs --open",
-        "docs:build": "vitepress build docs",
-        "postinstall": "node scripts/patch-mpd2.js"
+        "release": "bun run checks && bun run bundles && cd packages/mpdtui && bunx bumpp --no-push && bun publish --access public"
     },
     "devDependencies": {
-        "@monstermann/barrels": "^0.3.0",
-        "@monstermann/barrels-namespace": "^0.3.0",
-        "@monstermann/eslint-config": "^0.4.0",
-        "@monstermann/vitepress-theme": "^0.2.0",
-        "@sindresorhus/tsconfig": "^7.0.0",
-        "prompts": "^2.4.2",
-        "tsdown": "^0.15.0",
-        "typescript": "^5.8.3",
-        "vitest": "^3.2.4"
+        "@monstermann/eslint-config": "^0.8.0",
+        "@monstermann/tsconfig": "^0.0.0",
+        "typescript": "^6.0.0"
     }
 }

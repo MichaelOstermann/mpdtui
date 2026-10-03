@@ -8,30 +8,36 @@
     "homepage": "https://MichaelOstermann.github.io/mpdtui",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/MichaelOstermann/mpdtui.git"
+        "url": "git+https://github.com/MichaelOstermann/mpdtui.git",
+        "directory": "packages/mpdtui"
     },
     "bugs": {
         "url": "https://github.com/MichaelOstermann/mpdtui/issues"
     },
-    "keywords": [],
-    "sideEffects": false,
+    "keywords": ["mpd", "music", "terminal", "tui", "cli"],
     "bin": {
         "mpdtui": "./dist/index.js"
     },
     "files": [
-        "dist"
+        "dist/index.js"
     ],
+    "engines": {
+        "bun": ">=1.4.2"
+    },
     "scripts": {
-        "bundle": "tsdown",
-        "release": "bun publish --access public"
+        "bundle": "bun run build.ts"
     },
     "dependencies": {
-        "@monstermann/dfdl": "^0.1.0",
-        "@monstermann/signals": "^0.0.0",
-        "@monstermann/signals-tui": "^0.3.0",
-        "fuzzysort": "^3.1.0"
+        "@monstermann/signals": "^0.10.0",
+        "@monstermann/signals-react": "^0.10.0",
+        "@opentui/core": "0.5.14",
+        "@opentui/react": "0.5.14",
+        "fuzzysort": "^3.1.0",
+        "react": "^19.3.0"
     },
     "devDependencies": {
-        "mpd-api": "^1.1.3"
+        "@monstermann/signals-transform": "^0.10.0",
+        "@types/bun": "^1.4.2",
+        "@types/react": "^19.3.0"
     }
 }
